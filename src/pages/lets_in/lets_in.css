@@ -1,54 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 #lets-in-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
+  flex-direction: column;
+  padding: 1rem;
+  gap: 12px;
+  width: 100%; /* Especifica la anchura del div */
+  height: 800px; /* Especifica la altura del div */
+  display: flex; /* Habilita el comportamiento de flexbox */
+  align-items: center; /* Centra el div verticalmente */
+  justify-content: space-between; /* Centra el div horizontalmente */
   
-  .social-btn {
-    width: 200px;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    font-size: 0.875rem;
-    text-align: center;
   }
-  
-  .facebook-btn {
-    background-color: #3b5998;
-    color: #fff;
-  }
-  
-  .google-btn {
-    background-color: #4285f4;
-    color: #fff;
-  }
-  
-  .apple-btn {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .or-label {
-    margin: 1rem 0;
-    font-size: 0.875rem;
-  }
-  
-  .sign-in-btn {
-    width: 200px;
-    padding: 0.75rem 1rem;
-    margin-top: 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    font-size: 0.875rem;
-    text-align: center;
-  }
-  
-  .sign-up-btn {
-    margin-top: 1rem;
-    font-size: 0.875rem;
-    text-align: center;
-    color: blue;
-    text-decoration: underline;
-  }
+#buttons-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  gap: 23px;
+
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  gap: 8px;
+
+  color: #212121;
+}
+.secondary{
+  gap: 8px;
+  background-color: transparent;
+  width: 474px;
+  height: 64px;
+
+  border: 3px solid #E6E6EB;
+
+  /* Inside auto layout */
+
+  order: 0;
+
+}
+
+.primary{
+
+  color: #fff;
+  font-weight: 600;
+  background: #246BFD;
+  border: none;
+  /* Inside auto layout */
+
+  order: 1;
+  width: 474px;
+  height: 64px;
+  align-self: center;
+  flex-grow: 0;
+}
+
+.ghost{
+
+background: none;
+border: none;
+/* Inside auto layout */
+
+order: 2;
+align-self: center;
+flex-grow: 0;
+width: 474px;
+height: 64px;
+}
+
+i{
+  font-size: 1.3rem;
+}
